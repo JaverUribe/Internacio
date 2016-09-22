@@ -1,0 +1,1256 @@
+2016/09/10 18:59:00 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Applications/MAMP/htdocs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/users/admin.html
+HTTP_REFERER=http://localhost:8888/Inter/users/index.html
+---
+2016/09/10 18:59:53 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /Applications/MAMP/htdocs/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/users/admin.html
+HTTP_REFERER=http://localhost:8888/Inter/users/index.html
+---
+2016/09/10 20:11:02 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(127): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users.html
+---
+2016/09/10 20:11:02 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(127): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users.html
+---
+2016/09/10 20:11:10 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(127): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users.html
+---
+2016/09/10 20:12:17 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(127): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users.html
+---
+2016/09/10 20:13:06 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(127): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users.html
+---
+2016/09/10 20:14:11 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(19): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(127): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users.html
+---
+2016/09/10 20:15:57 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /Applications/MAMP/htdocs/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Applications/MAMP/htdocs/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/htdocs/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Inter/gii/model/index.html
+HTTP_REFERER=http://localhost:8888/Inter/gii/default/index.html
+---
+2016/09/10 20:18:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "users". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/users.html
+HTTP_REFERER=http://localhost:8888/Inter/gii/crud/index.html
+---
+2016/09/11 18:36:44 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/css/boots...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/users/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8887/Inter/users/index.html
+---
+2016/09/11 18:36:44 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "css". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('css')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('css')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/css/respo...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/users/css/responsive.min.css
+HTTP_REFERER=http://localhost:8887/Inter/users/index.html
+---
+2016/09/11 18:36:44 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "ico". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('ico')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('ico')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/ico/favic...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/users/ico/favicon.png
+HTTP_REFERER=http://localhost:8887/Inter/users/index.html
+---
+2016/09/11 18:49:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/responsive.min.css". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost:8887/Inter/users/index.html
+---
+2016/09/11 18:49:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/bootstrap.min.css". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8887/Inter/users/index.html
+---
+2016/09/11 18:49:16 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/ico/favicon.png". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/ico/favicon.png
+HTTP_REFERER=http://localhost:8887/Inter/users/index.html
+---
+2016/09/11 18:49:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/bootstrap.min.css". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8887/Inter/
+---
+2016/09/11 18:49:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/responsive.min.css". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost:8887/Inter/
+---
+2016/09/11 18:49:44 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/bootstrap.min.css". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8887/Inter/
+---
+2016/09/11 18:49:44 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/css/responsive.min.css". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost:8887/Inter/
+---
+2016/09/11 20:00:49 [error] [php] Undefined variable: content (/Applications/MAMP/htdocs/Inter/themes/classic/views/site/index.php:4)
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CWebApplication->run()
+REQUEST_URI=/Inter/
+in /Applications/MAMP/htdocs/Inter/themes/classic/views/site/index.php (4)
+in /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php (33)
+in /Applications/MAMP/htdocs/Inter/index.php (13)
+2016/09/11 20:09:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('login')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/login')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/users/login
+---
+2016/09/11 20:18:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "/modules/cooperacioninternacional". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('/modules/cooper...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter//modules/cooperacioninternacional/
+HTTP_REFERER=http://localhost:8887/Inter/
+---
+2016/09/11 20:53:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/
+---
+2016/09/11 20:53:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/11 20:55:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/11 21:49:52 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#3 /Applications/MAMP/htdocs/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#4 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/column1.php(6): CBaseController->endContent()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#10 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(33): CController->render('index')
+#11 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#16 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Inter/
+---
+2016/09/11 21:54:51 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#3 /Applications/MAMP/htdocs/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#4 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/column1.php(6): CBaseController->endContent()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#10 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(33): CController->render('index')
+#11 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#16 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Inter/
+HTTP_REFERER=http://localhost:8887/
+---
+2016/09/11 22:23:13 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#3 /Applications/MAMP/htdocs/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#4 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/column1.php(6): CBaseController->endContent()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#10 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(33): CController->render('index')
+#11 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#16 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#17 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Inter/
+---
+2016/09/11 22:53:44 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "admin". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('admin')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/admin
+---
+2016/09/11 22:53:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "users". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('users')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/users
+---
+2016/09/11 22:54:22 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "users". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('users')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/users
+---
+2016/09/11 23:06:42 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#3 /Applications/MAMP/htdocs/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#4 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/column1.php(6): CBaseController->endContent()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#10 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(33): CController->render('index')
+#11 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#16 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#17 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Inter/site/index.html
+HTTP_REFERER=http://localhost:8887/Inter/users/admin
+---
+2016/09/11 23:07:32 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:49
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#3 /Applications/MAMP/htdocs/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#4 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/column1.php(6): CBaseController->endContent()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#10 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(33): CController->render('index')
+#11 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#16 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#17 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Inter/site/index.html
+---
+2016/09/12 00:39:29 [error] [exception.ParseError] ParseError: syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ')' in /Applications/MAMP/htdocs/Inter/protected/views/site/contact.php:78
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('contact', Array, true)
+#3 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(75): CController->render('contact', Array)
+#4 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('contact')
+#9 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#10 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Inter/site/contact.html
+HTTP_REFERER=http://localhost:8887/Inter/site/page.html?view=about
+---
+2016/09/12 00:43:12 [error] [exception.ParseError] ParseError: syntax error, unexpected '$layout' (T_VARIABLE) in /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php:33
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('login/')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#2 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/Inter/site/login.html
+HTTP_REFERER=http://localhost:8887/Inter/site/contact.html
+---
+2016/09/12 01:05:51 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/site/index.html
+---
+2016/09/12 01:05:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/12 01:06:38 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/12 01:06:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/12 01:06:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/12 01:27:04 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:51
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(36): CController->render('index')
+#3 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/site/index.html
+HTTP_REFERER=http://localhost:8887/Inter/site/contact.html
+---
+2016/09/12 19:57:36 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/site/index.html
+---
+2016/09/12 19:59:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/12 19:59:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgfooter.png". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgfooter.png
+HTTP_REFERER=http://localhost:8887/Inter/site/index.html
+---
+2016/09/12 19:59:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgfooter.png". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgfooter.png
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/12 19:59:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/12 20:00:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgfooter.png". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgfooter.png
+HTTP_REFERER=http://localhost:8887/Inter/themes/classic/css/bootstrap.min.css
+---
+2016/09/12 20:18:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "themes/classic/img/bgmain.jpg". in /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Inter/themes/classic/img/bgmain.jpg
+HTTP_REFERER=http://localhost:8887/Inter/site/index.html
+---
+2016/09/12 21:59:23 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index.html". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/index.html/users
+---
+2016/09/12 21:59:48 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index.html". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/index.html/site
+---
+2016/09/12 21:59:57 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index.html". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/index.html/users/admin
+---
+2016/09/12 22:00:03 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index.html". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('index.html')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index.html')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.html...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/index.html/users
+---
+2016/09/12 22:10:15 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Applications/MAMP/htdocs/yii/framework/web/CController.php:336
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#9 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/update/in...')
+#10 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Inter/users/update/index.html
+---
+2016/09/12 22:10:20 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /Applications/MAMP/htdocs/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/delete/in...')
+#10 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Inter/users/delete/index.html
+---
+2016/09/12 22:10:30 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login ". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('login ')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('login ')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/login /in...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/users/login%20/index.html
+---
+2016/09/12 22:10:40 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "logouth". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('logouth')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('logouth')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/logouth/i...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/users/logouth/index.html
+---
+2016/09/12 22:10:58 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "l". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('l')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('l')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/l')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/users/l
+---
+2016/09/12 22:29:33 [error] [exception.ParseError] ParseError: syntax error, unexpected '*', expecting function (T_FUNCTION) in /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php:108
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('page/')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#2 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/Inter/site/page.html?view=about
+HTTP_REFERER=http://localhost:8887/Inter/site/contact.html
+---
+2016/09/12 22:35:43 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC) in /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#2 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/Inter/users
+---
+2016/09/12 22:35:58 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC) in /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#2 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#3 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/Inter/users
+---
+2016/09/12 22:39:49 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ')' in /Applications/MAMP/htdocs/Inter/protected/views/users/index.php:10
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#3 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#4 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#12 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/index')
+#15 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/Inter/users/index.html
+HTTP_REFERER=http://localhost:8887/Inter/users/create.html
+---
+2016/09/13 00:36:15 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "users". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('users')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/users
+---
+2016/09/13 00:36:18 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "users". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('users')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/users
+---
+2016/09/13 00:36:21 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "users". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('users')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/users/
+---
+2016/09/13 01:11:30 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "> div style=". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('> div style=')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('> div style=')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/> div styl...')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/%3E%20div%20style=
+HTTP_REFERER=http://localhost:8887/Inter/site/index.html
+---
+2016/09/13 01:21:50 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:64
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="con...')
+#3 /Applications/MAMP/htdocs/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="con...')
+#4 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(214): COutputProcessor->run()
+#5 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#6 /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/column1.php(8): CBaseController->endContent()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#10 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(104): CController->render('login', Array)
+#11 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#12 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#16 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#17 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Inter/site/login.html
+HTTP_REFERER=http://localhost:8887/Inter/site/contact.html
+---
+2016/09/13 01:32:35 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(36): CController->render('index')
+#3 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/site/index.html
+HTTP_REFERER=http://localhost:8887/Inter/site/login.html
+---
+2016/09/13 01:32:51 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(36): CController->render('index')
+#3 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/site/index.html
+HTTP_REFERER=http://localhost:8887/Inter/site/login.html
+---
+2016/09/13 01:33:01 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(36): CController->render('index')
+#3 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/site/index.html
+HTTP_REFERER=http://localhost:8887/Inter/site/login.html
+---
+2016/09/13 01:33:22 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(36): CController->render('index')
+#3 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/site/index.html
+HTTP_REFERER=http://localhost:8887/Inter/site/login.html
+---
+2016/09/13 01:34:34 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(36): CController->render('index')
+#3 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/site/index.html
+HTTP_REFERER=http://localhost:8887/Inter/site/login.html
+---
+2016/09/13 01:34:38 [error] [exception.ParseError] ParseError: syntax error, unexpected '<', expecting ')' in /Applications/MAMP/htdocs/Inter/themes/classic/views/layouts/main.php:59
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#1 /Applications/MAMP/htdocs/yii/framework/web/CController.php(784): CBaseController->renderFile('/Applications/M...', Array, true)
+#2 /Applications/MAMP/htdocs/Inter/protected/controllers/SiteController.php(36): CController->render('index')
+#3 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#8 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site')
+#9 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Inter/site
+---
+2016/09/13 01:45:02 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "gii". in /Applications/MAMP/htdocs/yii/framework/web/CController.php:483
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/web/CController.php(270): CController->missingAction('gii')
+#1 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('gii')
+#2 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/gii')
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Inter/site/gii
+---
+2016/09/13 01:49:23 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /Applications/MAMP/htdocs/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Applications/MAMP/htdocs/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/htdocs/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Inter/gii/model/index.html
+HTTP_REFERER=http://localhost:8887/Inter/gii/default/index.html
+---
+2016/09/13 01:49:25 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /Applications/MAMP/htdocs/yii/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /Applications/MAMP/htdocs/yii/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /Applications/MAMP/htdocs/yii/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /Applications/MAMP/htdocs/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Inter/gii/model/index.html
+HTTP_REFERER=http://localhost:8887/Inter/gii/default/index.html
+---
+2016/09/13 01:55:16 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(21): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users
+---
+2016/09/13 01:55:19 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(21): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users
+---
+2016/09/13 02:30:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/yii/framework/db/ar/CActiveRecord.php(1601): CActiveRecord->getCommandBuilder()
+#7 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#8 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#9 /Applications/MAMP/htdocs/yii/framework/web/CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#10 /Applications/MAMP/htdocs/yii/framework/web/CDataProvider.php(168): CActiveDataProvider->fetchData()
+#11 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CBaseListView.php(125): CDataProvider->getData()
+#12 /Applications/MAMP/htdocs/yii/framework/zii/widgets/CListView.php(211): CBaseListView->init()
+#13 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(147): CListView->init()
+#14 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#15 /Applications/MAMP/htdocs/Inter/protected/views/users/index.php(21): CBaseController->widget('zii.widgets.CLi...', Array)
+#16 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(126): require('/Applications/M...')
+#17 /Applications/MAMP/htdocs/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/M...', Array, true)
+#18 /Applications/MAMP/htdocs/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/M...', Array, true)
+#19 /Applications/MAMP/htdocs/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#20 /Applications/MAMP/htdocs/Inter/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#21 /Applications/MAMP/htdocs/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#22 /Applications/MAMP/htdocs/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /Applications/MAMP/htdocs/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /Applications/MAMP/htdocs/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /Applications/MAMP/htdocs/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /Applications/MAMP/htdocs/yii/framework/web/CController.php(291): CFilterChain->run()
+#29 /Applications/MAMP/htdocs/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(282): CController->run('')
+#31 /Applications/MAMP/htdocs/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#32 /Applications/MAMP/htdocs/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#33 /Applications/MAMP/htdocs/Inter/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Inter/users
+---
